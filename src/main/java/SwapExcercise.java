@@ -9,5 +9,6 @@ public class SwapExcercise {
         a = b;
         b = temp;
         System.out.printf("a : %d b : %d");
+        System.out.println();
     }
 }
