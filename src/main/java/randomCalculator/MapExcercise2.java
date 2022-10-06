@@ -6,33 +6,26 @@ import java.util.Map;
 public class MapExcercise2 {
     public static void main(String[] args) {
 
-        String repoAddr = "https://github.com/seanee3670/CodeLion/tree/master/src";
-        String repoAddrLower = repoAddr.toLowerCase(); // 소문자 변환
+        String repoAddr = "https://github.com/Leejeonghyunn/IntelliJ-Git-exercise/tree/main/src/main/java";
 
-        Map<String, Integer> alphabetCnt = new HashMap<>();
+        HashMap<Character, Integer> alphabetCnt = new HashMap<>();
 
-        // 65~90 영어 대문자
-        // 97~122 영어 소문자
-        // map에 글자 먼저 넣기
-
-        for (int i=0; i<26; i++){
-            alphabetCnt.put(Character.toString((char)(i+97)),0);
-        }
-
-
-        //
-        for (int i=0; i<repoAddr.length();i++){
-            String letter = String.valueOf(repoAddrLower.charAt(i));
-            if (alphabetCnt.keySet().contains(letter)){
-                alphabetCnt.put(letter,(alphabetCnt.get(letter) +1));
+        for (int i = 0; i < repoAddr.length(); i++){
+            //깃 주소를 문자 한개씩 받을 변수
+            char c = repoAddr.charAt(i);
+            //깃 주소를 문자 한개씩 받을 변수
+            int num = (int)c;
+            //대문자와 소문자 모두 담기위해, 처음 들어오는 값이면 value를 1로 초기화
+            if ((num >= 65 && num <= 90) || (num >= 97 && num <= 122)
+                    && alphabetCnt.get(c) == null ){
+                alphabetCnt.put(c, 1);
+                //이미 들어온 값이면 value++
+            } else if ((num >= 65 && num <= 90) || (num >= 97 && num <= 122)) {
+                alphabetCnt.put(c, (alphabetCnt.get(c)+1));
             }
         }
-
-        System.out.println(alphabetCnt.get("b"));
-        System.out.println(alphabetCnt.get("c"));
-        System.out.println(alphabetCnt.get("r"));
-
-
-
+        for (Map.Entry<Character,Integer> entry: alphabetCnt.entrySet()) {
+            System.out.println(entry.getKey()+" : "+ entry.getValue());
+        }
     }
 }
