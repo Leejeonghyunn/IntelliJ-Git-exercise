@@ -1,4 +1,4 @@
-package randomCalculator;
+package randomCalculator.list;
 
 import java.util.ArrayList;
 import java.util.List;

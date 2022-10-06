@@ -1,4 +1,6 @@
-package randomCalculator;
+package randomCalculator.RandomNumberGenerator;
+
+import randomCalculator.RandomNumberGenerator.RandomNumberGenerator;
 
 import java.util.ArrayList;
 import java.util.HashSet;

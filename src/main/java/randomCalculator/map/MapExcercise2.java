@@ -1,4 +1,4 @@
-package randomCalculator;
+package randomCalculator.map;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,5 +1,7 @@
 package randomCalculator;
 
+import randomCalculator.list.ListExercise;
+
 import java.util.List;
 
 public class Main {

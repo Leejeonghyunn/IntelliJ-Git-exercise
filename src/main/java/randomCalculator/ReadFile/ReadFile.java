@@ -1,4 +1,4 @@
-package randomCalculator;
+package randomCalculator.ReadFile;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package randomCalculator;
+package randomCalculator.RandomNumberGenerator;
 
 public class RandomAlphabetGenerator {
     public char generator() {

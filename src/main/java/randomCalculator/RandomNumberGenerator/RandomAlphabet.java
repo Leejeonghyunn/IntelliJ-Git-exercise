@@ -1,4 +1,4 @@
-package randomCalculator;
+package randomCalculator.RandomNumberGenerator;
 
 import java.util.HashSet;
 import java.util.Set;
