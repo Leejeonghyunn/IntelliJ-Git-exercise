@@ -1,3 +1,5 @@
+package Swap;
+
 public class SwapExcercise {
     public static void main(String[] args) {
 

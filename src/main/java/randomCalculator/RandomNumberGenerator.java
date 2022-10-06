@@ -2,7 +2,7 @@ package randomCalculator;
 
 public class RandomNumberGenerator implements NumberGenerator{
     @Override
-    public int generate(int num){
+    public int generator(int num){
         return (int)(Math.random()*num);
     }
 }

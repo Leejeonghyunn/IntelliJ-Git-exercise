@@ -2,7 +2,7 @@ package randomCalculator;
 
 import java.util.List;
 
-public class ListExcerciseMain {
+public class Main {
     public static void main(String[] args) {
         ListExercise listExercise = new ListExercise();
 
